@@ -1,0 +1,139 @@
+/* Common styles for all screen sizes */
+
+/* Input search box styles */
+/* Input search box styles */
+
+/* Success message styles */
+#success-message {
+    display: none;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#success-message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Show the success message when the certificate is verified */
+#result.verified #success-message {
+    display: block;
+}
+
+
+input[type="text"] {
+    width: 80%; /* Reduce the width to make it smaller */
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #007bff;
+    transition: all 0.3s ease;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure it takes full width */
+}
+
+/* Company logo styles */
+.company-logo {
+    max-width: 200px; /* Adjust the max width as needed */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto 20px; /* Add spacing below the logo */
+}
+
+
+
+/* Center vertically within the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: auto; /* Full viewport height */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pexels-pixabay-268533.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(245, 225, 135); /* Semi-transparent white background */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #080505;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add bottom margin to separate input fields */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Tablets and smaller desktops */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
+}
+
+/* Larger desktops and laptops */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 800px;
+    }
+}
